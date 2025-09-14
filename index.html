@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Итмо-практика</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<form action="http://test.itcobra.ru/" method="GET">
+	<fieldset>
+		<legend>Текстовые поля</legend>
+		<div>
+			<label for="text1">Однострочное поле</label><br>
+			<input type="text" id="text1" maxlength="10" placeholder="Введите текст..." required minlength="3">
+		</div>
+		<div>
+			<label for="pass1">Поле для ввода пароля</label><br>
+			<input type="password" id="pass1" maxlength="10" placeholder="Введите пароль...">
+		</div>
+		<div>
+			<label for="textarea1">Поле для комментария</label><br>
+			<textarea id="textarea1" style="max-height: 37px; max-width: 165px;"></textarea>
+		</div>
+		<div>
+			<label for="hidden1">Скрытое поле</label><br>
+			<input type="hidden" id="hidden1">
+		</div>
+		<div>
+			<label for="file1">Поле для загрузки файла(-ов)</label><br>
+			<input type="file" id="file1" accept="image/jpeg, image/png" multiple >
+		</div>
+	</fieldset>
+	<style type="text/css">
+		.layer{
+			border-radius: 20%;
+			background-color: #a2f6cc;
+			margin-left: 20%
+		}
+	</style>
+	<fieldset>
+		<legend>Переключатели</legend>
+		<fieldset class="layer">
+			<legend>Радио-кнопки</legend>
+			<label>Вариант1
+				<input type="radio" name="radio1" checked >
+			</label>
+			<label>Вариант2
+				<input type="radio" name="radio1">
+			</label>
+			<label>Вариант3
+				<input type="radio" name="radio1">
+			</label>
+		</fieldset>
+		<fieldset class="layer">
+			<legend>Чек-боксы</legend>
+			<label>Подписка на новости
+				<input type="checkbox" name="checkbox1">
+			</label><br>
+			<label>Политика пользовательской безопасности
+				<input type="checkbox" name="checkbox1">
+			</label>
+		</fieldset>
+	</fieldset>
+	<fieldset>
+		<legend>Кнопки</legend>
+		<input type="submit" value="Отправить/Перейти"><br>
+		<input type="button" value="обычная кнопка"><br>
+		<input type="reset" value="Очистить значение формы"><br>
+		<input type="image" src="https://ucare.timepad.ru/5811115a-34e9-40b3-b422-1b46d4cd0bb6/-/preview/" alt="Кнопка регистрации"><br>
+		<img src="https://ucare.timepad.ru/5811115a-34e9-40b3-b422-1b46d4cd0bb6/-/preview/">
+	</fieldset>
+	<fieldset>
+		<legend>Поля со списками</legend>
+		<select>
+			<option value="1">Item1</option>
+			<option value="2">Item2</option>
+			<option value="3">Item3</option>
+			<option value="4">Item4</option>
+			<option value="5">Item5</option>
+		</select><br><br>
+		<select size="3">
+			<option value="1">Item1</option>
+			<option value="2">Item2</option>
+			<option value="3">Item3</option>
+			<option value="4">Item4</option>
+			<option value="5">Item5</option>
+		</select><br><br>
+		<select multiple size="3">
+			<option value="1">Item1</option>
+			<option value="2">Item2</option>
+			<option value="3">Item3</option>
+			<option value="4">Item4</option>
+			<option value="5">Item5</option>
+		</select><br><br>
+		<select multiple size="5">
+			<optgroup label="Смартфоны">
+				<option value="1">Item1</option>
+				<option value="2">Item2</option>
+				<option value="3">Item3</option>
+				<option value="4">Item4</option>
+				<option value="5">Item5</option>
+			</optgroup>
+			<optgroup label="Компьютеры">
+				<option value="1">Item1</option>
+				<option value="2">Item2</option>
+				<option value="3">Item3</option>
+				<option value="4">Item4</option>
+				<option value="5">Item5</option>
+			</optgroup>
+		</select><br><br>
+	</fieldset>
+	<fieldset>
+		<legend>инпуты</legend>
+		<label for="email1">Поле для Email</label>
+		<input type="email" id="email1" required><br>
+		<label for="url1">Поле для url</label>
+		<input type="url" id="url1"><br>
+		<label for="num1">Счетчик</label>
+		<input type="number" id="num1" max="10" min="-10" step="2">
+		<label for="search1">Поиск</label>
+		<input type="search" id="search1">
+		<label for="phone1">номер телефона</label>
+		<input type="tel" id="phone1" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+	</fieldset>
+</form>
+</body>
+</html>
